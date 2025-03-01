@@ -1,0 +1,90 @@
+main {
+    max-width: 930px;
+    align-items: center;
+    padding: 30px;
+    border-radius: 35px;
+}
+
+.info {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+
+    p {
+        margin: 25px 0;
+    }
+
+    ul {
+        li {
+            display: flex;
+            gap: 12px;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+
+            &::before {
+                content: url(../images/icon-list.svg);
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .label-erro {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            margin-bottom: 9px;
+
+            .error-msg {
+                display: none;
+                color: var(--primary-red);
+
+                &.ativo {
+                    display: block;
+                }
+            }
+        }
+
+        input {
+            border: 1px solid var(--neutral-grey);
+            outline: #000000;
+            font-size: 18px;
+            width: 100%;
+
+            &.invalid {
+                border: 1px solid var(--primary-red);
+                color: var(--primary-red);
+                background-color: hsla(4, 100%, 67%, 0.17);
+                outline: var(--primary-red);
+            }
+        }
+    }
+}
+
+
+@media (max-width: 844px) {
+    main {
+        flex-direction: column-reverse;
+        padding: 0 0 30px;
+        overflow-y: hidden;
+        border-radius: 0;
+    }
+
+    .info {
+        padding: 0 30px;
+    }
+
+    picture {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
