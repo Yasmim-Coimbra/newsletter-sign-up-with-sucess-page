@@ -19,16 +19,15 @@ formBtn.addEventListener('submit', (event) => {
 function validateEmail() {
     const email = emailInput.value;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        emailValido = false;
-    } else {
+    
+    if (emailRegex.test(email)) {
         emailValido = true;
+    } else {
+        emailValido = false;
     }
 }
 
 function addErrorState() {
-    if (!emailValido) {
-        error.classList.add('ativo');
-        input.classList.add('invalid');
-    }
+    error.classList.add('ativo');
+    input.classList.add('invalid');
 }
