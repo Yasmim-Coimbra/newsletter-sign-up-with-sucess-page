@@ -86,6 +86,7 @@ main {
 
         input {
             border: 1px solid var(--neutral-grey);
+            outline: #000000;
             font-size: 18px;
             width: 100%;
 
