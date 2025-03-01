@@ -1,0 +1,51 @@
+body {
+    background-color: var(--neutral-blue-700);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--neutral-white);
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 100%;
+}
+
+h1, span {
+    font-weight: 700;
+}
+
+p {
+    line-height: 145%;
+}
+
+button,
+input {
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 15px 20px;
+}
+
+button {
+    width: 100%;
+    background-color: var(--neutral-blue-800);
+    color: var(--neutral-white);
+    font-size: 16px;
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+        background: linear-gradient(to right, #FF5475, #FF693E);
+        box-shadow: 0 12px 8px 0 rgba(255, 84, 117, 0.3);
+    }
+}
