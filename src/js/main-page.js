@@ -2,6 +2,8 @@ const emailInput = document.querySelector('input[type="email"]');
 const errorMsg = document.querySelector('.error-msg');
 const formBtn = document.querySelector('button');
 
+let emailValido = false;
+
 formBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
@@ -20,8 +22,6 @@ function validateEmail() {
     
     if (emailRegex.test(email)) {
         emailValido = true;
-    } else {
-        emailValido = false;
     }
 }
 
