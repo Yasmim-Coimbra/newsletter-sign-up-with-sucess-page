@@ -1,10 +1,8 @@
-const emailInput = document.querySelector('input [type="email"]');
-const error = document.querySelector('.error-msg');
+const emailInput = document.querySelector('input[type="email"]');
+const errorMsg = document.querySelector('.error-msg');
 const formBtn = document.querySelector('button');
 
-let emailValido = false;
-
-formBtn.addEventListener('submit', (event) => {
+formBtn.addEventListener('click', (event) => {
     event.preventDefault();
 
     validateEmail();
@@ -28,6 +26,6 @@ function validateEmail() {
 }
 
 function addErrorState() {
-    error.classList.add('ativo');
-    input.classList.add('invalid');
+    errorMsg.classList.add('ativo');
+    emailInput.classList.add('invalid');
 }
