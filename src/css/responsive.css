@@ -1,0 +1,19 @@
+@media (max-width: 844px) {
+    main {
+        flex-direction: column-reverse;
+        padding: 0 0 30px;
+        overflow-y: hidden;
+        border-radius: 0;
+    }
+
+    .info {
+        padding: 0 30px;
+    }
+
+    picture {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
