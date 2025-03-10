@@ -22,6 +22,7 @@ function validateEmail() {
 
 	if (emailRegex.test(email)) {
 		emailValido = true;
+		localStorage.setItem("email", email)
 	}
 }
 
