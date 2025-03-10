@@ -23,7 +23,7 @@ function validateEmail() {
 
 	if (emailRegex.test(email)) {
 		emailValido = true;
-		sessionStorage.setItem("email", email)
+		sessionStorage.setItem("email", email);
 	}
 }
 
@@ -33,6 +33,6 @@ function addErrorState() {
 }
 
 export function storeEmail() {
-    const email = sessionStorage.getItem("email");
-    return email;
+	const email = sessionStorage.getItem("email");
+	return email;
 }
