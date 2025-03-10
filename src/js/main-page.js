@@ -10,6 +10,7 @@ formBtn.addEventListener("click", (event) => {
 	validateEmail();
 
 	if (emailValido) {
+		storeEmail();
 		window.location.replace("./success-page.html");
 	} else {
 		addErrorState();
